@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: url("https://source.unsplash.com/random") center/cover no-repeat;
+}
+
+.login-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  height: 35rem;
+  width: 50rem;
+  background-color: rgba(20, 20, 20, 0.7);
+  border-radius: 20px;
+
+  h2 {
+    color: #fff;
+  }
+
+  .icon-field {
+    display: flex;
+    align-items: center;
+  }
+
+  .form-field {
+    color: #fff;
+  }
+
+  #showPassword {
+      cursor: pointer;
+  }
+
+  .btn {
+    width: 10rem;
+    margin-top: 1.5rem;
+  }
+
+  .reset-password {
+    margin-top: 1rem;
+  }
+
+  .alert-message {
+    visibility: hidden;
+  }
+
+  .form-field.error input {
+    border-color: red;
+  }
+
+  .form-field.success input {
+    border-color: green;
+  }
+}

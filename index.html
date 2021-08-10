@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Form Validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/evil-icons@1.9.0/assets/evil-icons.min.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="https://www.google.com/" target="_blank" id="loginForm">
+            
+            <div class="form-field">
+                <label for="loginUsername">Username</label>
+                <input type="text" id="loginUsername" placeholder="Enter your username">
+                <small class="alert-message">Error</small>
+            </div>
+            
+            <div class="form-field">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" placeholder="Enter your password">
+                <small class="alert-message">Error</small>
+            </div>
+
+            <div class="form-field icon-field" >
+                <div data-icon="ei-eye" data-size="s" id="show"></div>
+                <label id="showPassword">Show/Hide password</label>
+            </div>
+
+            <button class="btn">Go</button>
+        </form>
+
+        <div class="reset-password">
+            <small><a href="#">Forgot Username or Password</a></small>
+        </div>
+
+        <form class="form-request">
+            <div class="form-field">
+                <label for="requestEmail">Email Address</label>
+                <input type="email" id="requestEmail" placeholder="Enter Your Email">
+                <small class="alert-message">Error</small>
+            </div>
+            <button class="btn red">Request</button>
+        </form>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

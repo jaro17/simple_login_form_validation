@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: url("https://source.unsplash.com/random") center/cover no-repeat;
+}
+
+.login-container {
+  margin: 2rem auto;
+  padding: 2rem;
+  height: 35rem;
+  width: 50rem;
+  background-color: rgba(20, 20, 20, 0.7);
+  border-radius: 20px;
+}
+.login-container h2 {
+  color: #fff;
+}
+.login-container .icon-field {
+  display: flex;
+  align-items: center;
+}
+.login-container .form-field {
+  color: #fff;
+}
+.login-container #showPassword {
+  cursor: pointer;
+}
+.login-container .btn {
+  width: 10rem;
+  margin-top: 1.5rem;
+}
+.login-container .reset-password {
+  margin-top: 1rem;
+}
+.login-container .alert-message {
+  visibility: hidden;
+}
+.login-container .form-field.error input {
+  border-color: red;
+}
+.login-container .form-field.success input {
+  border-color: green;
+}
+
+/*# sourceMappingURL=main.css.map */
